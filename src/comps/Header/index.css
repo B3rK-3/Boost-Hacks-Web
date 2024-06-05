@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu'), url('./fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Exo-Reg';
+    src: local('Exo-Reg'), url('./fonts/Exo2-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.logo-name img {
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin-top: 1px;
+    padding-left: 5vw;
+}
+
+.chip {
+    text-decoration: none;
+    display: block;
+    padding-right: 3vw;
+    padding-left: 1.1vw;
+    padding-top: 11.5px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 0;
+    height: 0.1vh;
+}
+
+.chip:hover {
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding-top: 15px;
+    margin-right: 2vw;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding-right: 1.1vw;
+    padding-left: 1.1vw;
+    padding-top: 15px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.2s ease-in-out 0.3s;
+    position: relative;
+    z-index: 0;
+}
+
+.navigation a:hover::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 1vh);
+    bottom: 5px;
+    height: 3px;
+    width: 50%;
+    background-color: rgb(76, 76, 146);
+    border-radius: 0.5vh;
+    z-index: -1;
+}
+
+.sticked {
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    box-shadow: 0 2px 2px -2px gray;
+    border-radius: 2em;
+    z-index: 1000;
+    background: rgba(116, 216, 255, 0.3);
+    transition: all 0.15s ease-in 0s;
+
+}
+
+.body {
+    display: flex;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-family: "Exo-Reg", sans-serif;
+}
+
+.boost-logo {
+    height: 40%;
+}
+
+.boost-text {
+    position: absolute;
+    top: 45%;
+    color: white;
+    border-radius: 50px;
+    /* Makes the outer pill rounded */
+    height: 40px;
+    padding: 5px 10px;
+    /* Add padding for inner space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boost-text span {
+    color: white;
+    padding: 2px 7px;
+    /* Padding inside the inner pill */
+    border-radius: 50px;
+    /* Makes the inner pill rounded */
+    background-color: rgb(7, 101, 173);
+    /* Background color for the inner pill */
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elements{
+    position: absolute;
+    margin-top: 128px;
+    border: #374151 1px solid;
+    z-index: 200;
+    width: 130px;
+    right: 2vh;
+    top: 3%;
+    border-radius: 2vh;
+}
