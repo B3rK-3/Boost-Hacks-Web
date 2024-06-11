@@ -81,7 +81,6 @@
 .sticked {
     position: fixed;
     width: 100%;
-    height: 130px;
     box-shadow: 0 2px 2px -2px gray;
     border-radius: 2em;
     z-index: 1000;
@@ -100,17 +99,16 @@
 }
 
 .boost-logo {
-    height: 40%;
+    height: 350px;
 }
 
 .boost-text {
     position: absolute;
-    top: 45%;
+    top: 360px;
     color: white;
     border-radius: 50px;
     /* Makes the outer pill rounded */
     height: 40px;
-    padding: 5px 10px;
     /* Add padding for inner space */
     display: flex;
     align-items: center;
@@ -119,7 +117,6 @@
 
 .boost-text span {
     color: white;
-    padding: 2px 7px;
     /* Padding inside the inner pill */
     border-radius: 50px;
     /* Makes the inner pill rounded */

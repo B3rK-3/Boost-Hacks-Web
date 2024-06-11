@@ -16,28 +16,24 @@ const Header = () => {
     };
 
     const toggleMenu = () => {
-        if (navbarRef.current) {
-            navbarRef.current.classList.toggle('hidden');
-            navbarRef.current.classList.toggle('bg-gray-800');
-            navbarRef.current.classList.toggle('elements');
-        }
-    };
-
-    const handleResize = () => {
         if (navbarRef.current && window.innerWidth > 768) {
-            navbarRef.current.classList.add('hidden');
+            navbarRef.current.classList.remove('hidden');
             navbarRef.current.classList.remove('bg-gray-800');
             navbarRef.current.classList.remove('elements');
+        }
+        else if (navbarRef.current && window.innerWidth <= 768) {
+            navbarRef.current.classList.add('hidden');
+            navbarRef.current.classList.add('bg-gray-800');
+            navbarRef.current.classList.add('elements');
         }
     };
 
     useEffect(() => {
         window.addEventListener('scroll', changeStickState);
-        window.addEventListener('resize', handleResize);
-        handleResize();
+        window.addEventListener('resize', toggleMenu);
         return () => {
             window.removeEventListener('scroll', changeStickState);
-            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('resize', toggleMenu);
         };
     }, []);
 
@@ -79,17 +75,17 @@ const Header = () => {
 
                 <div className={`body mx-auto absolute ${sticked ? 'mt-[100px]' : ''}`}>
                     <div className="boost-logo-div">
-                        <img className="boost-logo" src={logo} alt="Logo" />
+                        <img className="boost-logo md:h-54" src={logo} alt="Logo" />
                     </div>
-                    <span className="boost-text mb-0 bg-blue-400">
-                        <span>June 17th - 25th, 2024</span>
-                        Online hackathon
+                    <span className="boost-text mb-0 bg-blue-400 px-[5px] py-[2px] sm:px-[10px] sm:py-[10px]">
+                        <span className='px-[2px] py-[-10px] xxs:px-[2px] xxs:py-[5px]'>June 17th - 25th, 2024</span>
+                        Online Hackathon
                     </span>
-                    <div className="absolute inset-0 flex items-center justify-center top-20">
-                        <div className="container flex flex-col items-center justify-center text-white">
-                            <div className="row flex justify-center text-center">
-                                <span className="col-sm bg-blue-500 rounded-[20px] hover:cursor-pointer">June 17th - 25th, 2024</span>
-                                <span className="col-sm">Online hackathon</span>
+                    <div className="absolute inset-0 items-center justify-center mx-0 mt-[410px] sm:w-3/4 md:w-[99dvw] mx-auto">
+                        <div className="container items-center justify-center text-white">
+                            <div className="row justify-center text-center gap-1">
+                                <span className="col-sm bg-blue-400 rounded-[20px] hover:cursor-pointer">June 17th - 25th, 2024</span>
+                                <span className="col-sm rounded-[20px] bg-blue-400 hover:cursor-pointer">Online hackathon</span>
                             </div>
                         </div>
                     </div>

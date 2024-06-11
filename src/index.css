@@ -16,3 +16,7 @@ code {
     monospace;
 }
 
+html {
+  overscroll-behavior: none
+}
+
