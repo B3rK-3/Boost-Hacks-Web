@@ -134,7 +134,63 @@
     border: #374151 1px solid;
     z-index: 200;
     width: 130px;
-    right: 2vh;
+    right: 5px;
     top: 3%;
     border-radius: 2vh;
+}
+
+.under {
+    position: relative;
+    color: rgba(126, 126, 240, 0.6);
+    transition: all .35s ease;
+
+    &::before {
+        content: ""; 
+        position: absolute;
+        width: 70%;
+        left: 15%;
+        height: 4px;
+        border-radius: 20px;
+        bottom: 0;
+        background-color: rgba(126, 126, 240, 0.6);
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.1s ease-in-out 0s; 
+        transition: all 0.1s ease-in-out 0s; 
+    }   
+
+    &:hover {
+        color: rgba(126, 126, 240, 0.6);
+
+        &::before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }   
+    }   
+}
+
+.bar {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.hambr .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hambr .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hambr .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
