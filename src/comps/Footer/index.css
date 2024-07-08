@@ -1,0 +1,17 @@
+.under
+{
+    &:hover{
+        cursor: pointer;
+    }
+    &::before{
+        bottom: -1px;
+        height: 2px;
+    }
+}
+
+.format
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}

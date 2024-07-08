@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+.roboto-slab-100 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.color {
+    background-color: #3c31dd;
+    z-index: 1001;
+  }
+
+.grad1
+{
+  background: linear-gradient(90deg, rgb(210, 228, 145) 0%, rgb(167, 102, 208) 100%);
+  height: 6px;
+  width: 320px;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 547px) {
+  .br {
+    position: relative;
+    width: 100%;
+  } 
+  
+  .br:after {
+    content: " ";
+    position: absolute;
+    border-right: 1px solid gray;
+    top: 13.5px;
+    width: 100%;
+    margin-left: 0;
+    border-bottom: 0px;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 547px) {
+  .bb {
+    position: relative;
+  }
+  
+  .bb:after {
+    content: " ";
+    position: absolute;
+    top: 92px;
+    margin-left: 151.5px;
+    width: 30%;
+    border-bottom: 1px solid gray;
+  }
+}
+
+.scale{
+  transform: scale(1.1);
+}
+
+.grad
+{
+  --bg-size: 400%;
+  --color-one: hsl(51, 100%, 50%);
+  --color-two: hsl(129, 76%, 61%);
+  background: linear-gradient(
+                90deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: bgAnim 15s infinite linear;
+}
+
+@keyframes bgAnim
+{
+  to {
+    background-position: var(--bg-size) 0;
+  }
+
+}
+
+#recap {
+  scroll-margin-top: 120px; /* Adjust this value based on the height of your header */
+}

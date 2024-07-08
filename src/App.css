@@ -24,14 +24,9 @@
   /* Optional: Add a shadow for better visibility */
 }
 
-.ABOUT {
-  background-color: #3c31dd;
-  height: 1000px;
-  overflow-x: hidden;
-  z-index: 10;
-}
-
 .wave {
+  display: flex;
+  z-index: 70;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -39,6 +34,7 @@
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  margin-bottom: -3px;
 }
 
 .wave svg {
@@ -50,22 +46,38 @@
 
 .wave .shape-fill {
   fill: #3c31dd;
-}
-
-.TEAM {
-  height: 1000px;
-  background-color: #FF6F61;
+  margin-bottom: -5px;
 }
 
 .spacer {
-  aspect-ratio: 900/450;
+  display: flex;
+  z-index: 77;
   width: 100%;
-  height: 900px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  margin-top: -5px;
+  height: 1000px;
+  width: 100%;
+  height: 220px;
+}
+
+.z {
+  z-index: 100;
 }
 
 .layer1 {
-  background-image: url('./imgs/wave_layer.svg');
+  background-image: url('./imgs/pattern.svg');
+}
+
+.waveDown{
+  background-image: url('./imgs/wavedown.svg');
+  display: flex;
+  z-index: 70;
+  width: 100%;
+  margin-top: -5px;
+  height: 18=70px;
+}
+
+.FOOTER
+{
+  background: #001220;
+  z-index: 69;
 }
