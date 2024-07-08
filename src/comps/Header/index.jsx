@@ -130,12 +130,13 @@ const Header = () => {
                     <div className="absolute flex items-center justify-center top-[547px] sm:top-[590px] w-full">
                         <div className="container flex flex-col items-center justify-center text-white items-center align-middle w-100">
                             <div className="row flex justify-center text-center w-full h-12 gap-x-4 gap-y-3 xs:gap-y-0 max-w-[315px] xs:max-w-[800px] mt-2">
-                                <span className="hRaise col-sm bg-blue-500 rounded-[12px] hover:cursor-pointer content-center py-2 text-[17px]">Register On Devpost</span>
-                                <span ref={widthRef} className="hRaise col-sm bg-blue-500 rounded-[12px] hover:cursor-pointer content-center py-2 flex items-center justify-center text-[17px]">
+                                <span className="hRaise col-sm bg-blue-500 rounded-[12px] hover:cursor-pointer content-center py-2 text-[17px] flex justify-center items-center"><a href='https://boost-hacks-ii.devpost.com/' target='_blank' className='format flex hover:cursor-pointer'>Register On Devpost</a></span>
+                                <span ref={widthRef} className="hRaise col-sm bg-blue-500 rounded-[12px] content-center py-2 flex items-center justify-center text-[17px]">
+                                    <a href='https://discord.gg/FpgReGv4qp' target='_blank' className='format flex hover:cursor-pointer'>
                                     <span>Join Our</span>
-                                    <FaDiscord id='width' color='white' className="ml-[4px] mb-[-4px] spin" />
+                                    <FaDiscord id='width' color='white' className="ml-[4px] mt-[6px] spin" /></a>
                                 </span>
-                                <span className="hRaise col-sm bg-blue-500 rounded-[12px] hover:cursor-pointer content-center py-2 text-[17px]">Be a Judge</span>
+                                <span className="hRaise col-sm bg-blue-500 rounded-[12px] content-center py-2 text-[17px] flex justify-center items-center"><a href='https://7y7w1tjdbbj.typeform.com/to/xgCXZ65q?typeform-source=boost-hacks-ii.devpost.com' target='_blank' className='format flex hover:cursor-pointer'>Be a Judge</a></span>
                             </div>
                         </div>
                     </div>

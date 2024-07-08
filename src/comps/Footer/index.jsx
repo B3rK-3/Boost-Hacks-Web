@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
                     <div className='h-[200px] flex flex-col items-center'>
                         <p className='roboto-slab-100 mb-3 md:text-[20px]'>Contact</p>
-                        <a href='https://boost-hacks-ii.devpost.com/details/dates' target="_blank" className='roboto-slab-100 under format block mb-2 text-[15px] md:text-[17px]'>Discord</a>
+                        <a href='https://discord.gg/FpgReGv4qp' target="_blank" className='roboto-slab-100 under format block mb-2 text-[15px] md:text-[17px]'>Discord</a>
                         <a href='mailto:boost-hacks@scilite.org' target="_blank" className='roboto-slab-100 under format block text-[15px] md:text-[17px]'>Email us</a>
                     </div>
                 </div>
