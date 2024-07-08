@@ -17,7 +17,7 @@ function App() {
             </svg>
           </div>
         </section>
-        <Recap className='z color' />
+        <Recap />
         <section className="spacer layer1"></section>
         <Sponsor />
         <img src={waveDown} className='mt-[-1px] waveDown' />

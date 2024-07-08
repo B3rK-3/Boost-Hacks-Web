@@ -205,3 +205,9 @@
     justify-content: space-between;
     z-index: 10001;
 }
+
+@media screen and (min-width: 436px) {
+    .chip{
+        transform: scale(1.15);
+    }
+}

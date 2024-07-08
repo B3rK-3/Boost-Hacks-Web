@@ -82,8 +82,9 @@ const Header = () => {
     return (
         <>
             <Bg />
-            <div className='mt-[-30px]'>
-                <nav className={`${sticked ? 'sticked backdrop-blur-[3px] mt-[-40px]' : 'z-yes mb-[-120px]'} h-32 `}>
+            <div className=''>
+                <div>
+                <nav className={`${sticked ? 'sticked backdrop-blur-[3px] mt-[-40px]' : 'z-yes mb-[-120px] mt-[-30px]'} h-[120px]`}>
                     <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-0`}>
                         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse my-2">
                             <img src={banner} className="h-[100px]" alt="Boost Hacks Logo" />
@@ -122,7 +123,7 @@ const Header = () => {
                         <span className='mb-[-16px] text-white text-[50px] roboto-slab-100 flex justify-center'>Boost Hacks II</span>
                         <img className="h-[360px] sm:h-[400px] mx-auto p-0" src={logo} alt="Logo" />
                     </p>
-                    <span id='yes' className="absolute boost-text top-[495px] sm:top-[540px] mb-0 bg-blue-400 py-0 px-0 xxxs:px-[0.2px] sm:p-2 w-[315px] sm:w-[315px] 3xxs:scale">
+                    <span id='yes' className="absolute boost-text top-[495px] sm:top-[540px] mb-0 bg-blue-400 py-0 px-0 xxxs:px-[0.2px] sm:p-2 w-[315px] sm:w-[315px] chip">
                         <span className='pl-[10px] py-[2px] xxxs:ml-[2px] xxxs:px-[3px] sm:py-[3px] sm:px-[3.5px]'>June 17th - 25th, 2024</span>
                         <span className='p-0 xxxs:px-[0.1px] sm:p-1 ml-[0px] mr-1'>Online Hackathon</span>
                     </span>
@@ -139,6 +140,7 @@ const Header = () => {
                         </div>
                     </div>
 
+                </div>
                 </div>
             </div>
         </>
