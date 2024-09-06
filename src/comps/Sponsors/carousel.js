@@ -6,7 +6,13 @@ import { Card, CardBody, CardTitle, CardText } from "reactstrap";
 import img2 from './images/incogni.png'
 import img1 from './images/nordpass.png'
 import img3 from './images/nordvpn.jpg'
-import img4 from './images/tbd.png'
+import tbd from './images/tbd.png'
+import img4 from './images/google.png'
+import img5 from './images/desmos-logo.png'
+import img6 from './images/onePass.png'
+import img7 from './images/intCake.png'
+import img8 from './images/musicfy.png'
+import img9 from './images/xyz.png'
 import { FaLocationArrow } from "react-icons/fa";
 const { v4: uuidv4 } = require('uuid');
 
@@ -14,7 +20,7 @@ class MyCarousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            goToSlide: 0
+            goToSlide: 3
         };
     }
 
@@ -22,41 +28,91 @@ class MyCarousel extends Component {
         {
             key: uuidv4(),
             content: (
-                <Card className="card-main bg-transparent border-0">
-                    <img src={img1} className="rounded-[30px]" alt="1" />
-                </Card>
+                <a href="https://nordpass.com" target="_blank">
+                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                        <img src={img1} className="rounded-[30px]" alt="1" />
+                    </Card>
+                </a>
             )
         },
         {
             key: uuidv4(),
             content: (
-                <Card className="card-main bg-transparent border-0">
-                    <img src={img2} className="rounded-[30px]" alt="1" />
-                </Card>
+                <a href="https://incogni.com" target="_blank">
+                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                        <img src={img2} className="rounded-[30px]" alt="1" />
+                    </Card>
+                </a>
             )
         },
         {
             key: uuidv4(),
             content: (
-                <Card className="card-main bg-transparent border-0">
-                    <img src={img3} className="rounded-[30px]" alt="1" />
-                </Card>
+                <a href="https://nordvpn.com" target="_blank">
+                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                        <img src={img3} className="rounded-[30px]" alt="1" />
+                    </Card>
+                </a>
             )
         },
         {
             key: uuidv4(),
             content: (
-                <Card className="card-main bg-transparent border-0">
-                    <img src={img4} className="rounded-[30px]" alt="1" />
-                </Card>
+                <a href="https://registry.google.com" target="_blank">
+                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                        <img src={img4} className="rounded-[30px]" alt="1" />
+                    </Card>
+                </a>
             )
         },
         {
             key: uuidv4(),
             content: (
-                <Card className="card-main bg-transparent border-0">
-                    <img src={img4} className="rounded-[30px]" alt="1" />
-                </Card>
+                <a href="https://desmos.com" target="_blank">
+                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                        <img src={img5} className="rounded-[30px]" alt="1" />
+                    </Card>
+                </a>
+            )
+        },
+        {
+            key: uuidv4(),
+            content: (
+                <a href="https://1password.com" target="_blank">
+                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                        <img src={img6} className="rounded-[30px]" alt="1" />
+                    </Card>
+                </a>
+            )
+        },
+        {
+            key: uuidv4(),
+            content: (
+                <a href="https://interviewcake.com" target="_blank">
+                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                        <img src={img7} className="rounded-[30px]" alt="1" />
+                    </Card>
+                </a>
+            )
+        },
+        {
+            key: uuidv4(),
+            content: (
+                <a href="https://musicfy.lol" target="_blank">
+                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                        <img src={img8} className="rounded-[30px]" alt="1" />
+                    </Card>
+                </a>
+            )
+        },
+        {
+            key: uuidv4(),
+            content: (
+                <a href="https://gen.xyz" target="_blank">
+                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                        <img src={img9} className="rounded-[30px]" alt="1" />
+                    </Card>
+                </a>
             )
         }
     ].map((slide, index) => {
