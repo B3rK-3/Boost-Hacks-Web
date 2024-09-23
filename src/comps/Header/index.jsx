@@ -84,7 +84,7 @@ const Header = () => {
             <Bg />
             <div className=''>
                 <div>
-                <nav className={`${sticked ? 'sticked backdrop-blur-[3px] mt-[-40px]' : 'z-yes mb-[-120px] mt-[-30px]'} h-[120px]`}>
+                <nav className={`${sticked ? 'sticked backdrop-blur-[3px] mt-[-40px]' : 'z-yes mb-[-120px] mt-[-30px]'} h-[150px]`}>
                     <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 z-0`}>
                         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse my-2">
                             <img src={banner} className="h-[100px]" alt="Boost Hacks Logo" />
@@ -118,7 +118,7 @@ const Header = () => {
                     </div>
                 </nav>
 
-                <div className={`body mx-auto absolute z-50 mt-[80px]`}>
+                <div className={`body mx-auto absolute z-50 mt-[50px]`}>
                     <p className='block mt-20 p-0 align-middle text-center'>
                         <span className='mb-[-16px] text-white text-[50px] roboto-slab-100 flex justify-center'>Boost Hacks II</span>
                         <img className="h-[360px] sm:h-[400px] mx-auto p-0" src={logo} alt="Logo" />
