@@ -20,7 +20,7 @@ class MyCarousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            goToSlide: 3
+            goToSlide: 0
         };
     }
 

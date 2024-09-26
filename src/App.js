@@ -20,9 +20,11 @@ function App() {
         <Recap />
         <section className="spacer layer1"></section>
         <Sponsor />
-        <img src={waveDown} className='mt-[-1px] waveDown' />
-        <section className='FOOTER h-[350px] 2xxs:h-[220px]'><Footer /></section>
+        <img src={waveDown} className='mt-[-10px] waveDown' />
+        <section className='FOOTER 2xxs:h-[220px]'><Footer /></section>
+
       </section>
+      
     </>
   );
 }
