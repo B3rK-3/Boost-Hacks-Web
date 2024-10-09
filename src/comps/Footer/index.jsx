@@ -6,7 +6,7 @@ import './index.css';
 const Footer = () => {
     return (
         <div className=" text-white px-3 mt-[-1px] mb-[5px]">
-            <div className='grid w-100 grid-cols-1 2xxs:grid-cols-2'>
+            <div className='grid grid-cols-1 w-100 2xxs:grid-cols-2'>
                 <div className='ml-[-5px]'>
                     <div className='flex self-center items-center px-0 md:w-max-[300px] justify-center 2xxs:justify-start'>
                         <img src={logo} className='self-center w-[100px] h-[100px] md:w-[150px] md:h-[150px]' />
@@ -34,9 +34,9 @@ const Footer = () => {
             </div>
             <div className='flex ml-[15px] mt-[-30px]'>
                 <a href='https://boost-hacks-ii.devpost.com/' target='_blank'>
-                <SiDevpost className='hover:translate-y-[-3px] hover:cursor-pointer transition-all h-6 w-6 mr-4' color='#546E7A' /></a>
+                    <SiDevpost className='hover:translate-y-[-3px] hover:cursor-pointer transition-all h-6 w-6 mr-4' color='#546E7A' /></a>
                 <a href='mailto:boost-hacks@scilite.org' target='_blank'>
-                <LuMails className='hover:translate-y-[-3px] hover:cursor-pointer transition-all h-6 w-6' color='#546E7A' /></a>
+                    <LuMails className='hover:translate-y-[-3px] hover:cursor-pointer transition-all h-6 w-6' color='#546E7A' /></a>
             </div>
         </div>
     );

@@ -29,7 +29,7 @@ class MyCarousel extends Component {
             key: uuidv4(),
             content: (
                 <a href="https://nordpass.com" target="_blank">
-                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                    <Card className="bg-transparent border-0 card-main hover:cursor-pointer" >
                         <img src={img1} className="rounded-[30px]" alt="1" />
                     </Card>
                 </a>
@@ -39,7 +39,7 @@ class MyCarousel extends Component {
             key: uuidv4(),
             content: (
                 <a href="https://incogni.com" target="_blank">
-                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                    <Card className="bg-transparent border-0 card-main hover:cursor-pointer" >
                         <img src={img2} className="rounded-[30px]" alt="1" />
                     </Card>
                 </a>
@@ -49,7 +49,7 @@ class MyCarousel extends Component {
             key: uuidv4(),
             content: (
                 <a href="https://nordvpn.com" target="_blank">
-                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                    <Card className="bg-transparent border-0 card-main hover:cursor-pointer" >
                         <img src={img3} className="rounded-[30px]" alt="1" />
                     </Card>
                 </a>
@@ -59,7 +59,7 @@ class MyCarousel extends Component {
             key: uuidv4(),
             content: (
                 <a href="https://registry.google.com" target="_blank">
-                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                    <Card className="bg-transparent border-0 card-main hover:cursor-pointer" >
                         <img src={img4} className="rounded-[30px]" alt="1" />
                     </Card>
                 </a>
@@ -69,7 +69,7 @@ class MyCarousel extends Component {
             key: uuidv4(),
             content: (
                 <a href="https://desmos.com" target="_blank">
-                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                    <Card className="bg-transparent border-0 card-main hover:cursor-pointer" >
                         <img src={img5} className="rounded-[30px]" alt="1" />
                     </Card>
                 </a>
@@ -79,7 +79,7 @@ class MyCarousel extends Component {
             key: uuidv4(),
             content: (
                 <a href="https://1password.com" target="_blank">
-                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                    <Card className="bg-transparent border-0 card-main hover:cursor-pointer" >
                         <img src={img6} className="rounded-[30px]" alt="1" />
                     </Card>
                 </a>
@@ -89,7 +89,7 @@ class MyCarousel extends Component {
             key: uuidv4(),
             content: (
                 <a href="https://interviewcake.com" target="_blank">
-                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                    <Card className="bg-transparent border-0 card-main hover:cursor-pointer" >
                         <img src={img7} className="rounded-[30px]" alt="1" />
                     </Card>
                 </a>
@@ -99,7 +99,7 @@ class MyCarousel extends Component {
             key: uuidv4(),
             content: (
                 <a href="https://musicfy.lol" target="_blank">
-                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                    <Card className="bg-transparent border-0 card-main hover:cursor-pointer" >
                         <img src={img8} className="rounded-[30px]" alt="1" />
                     </Card>
                 </a>
@@ -109,7 +109,7 @@ class MyCarousel extends Component {
             key: uuidv4(),
             content: (
                 <a href="https://gen.xyz" target="_blank">
-                    <Card className="card-main bg-transparent border-0 hover:cursor-pointer" >
+                    <Card className="bg-transparent border-0 card-main hover:cursor-pointer" >
                         <img src={img9} className="rounded-[30px]" alt="1" />
                     </Card>
                 </a>
